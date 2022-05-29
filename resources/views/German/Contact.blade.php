@@ -9,9 +9,9 @@
 <section class="banner-area relative">
   <div class="overlay overlay-bg"></div>
   <div class="container">
-    <div class="row justify-content-lg-end align-items-center banner-content">
-      <div class="col-lg-5">
-        <h1 class="text-white">Kontaktiere uns</h1>
+    <div class="row justify-content-lg-start align-items-center banner-content">
+      <div class="col-lg-6">
+        <h1 class="text-white">Контакти</h1>
         <!-- ===============================  Contact  ======================================== -->
         <p>{{ Setting()->about_gr }}</p>
         <!-- ===============================  Contact  ======================================== -->
@@ -29,11 +29,11 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <h2 class="contact-title">In Kontakt kommen</h2>
+        <h2 class="contact-title">Коментарій</h2>
         <!-- ===============================  Contact  ======================================== -->
         @if(session('Messagge'))
         <div class="alert alert-success" role="alert">
-          Herzliche Glückwünsche. Ihre Nachricht wurde erfolgreich gesendet
+          Вітаю. Ваше повідомлення успішно надіслано
         </div>
         @endif
         <!-- ===============================  Contact  ======================================== -->
@@ -45,27 +45,27 @@
           <div class="row">
             <div class="col-12">
               <div class="form-group">
-                <textarea class="form-control w-100" name="Content" id="Content" cols="30" rows="9" placeholder="Nachricht eingeben"></textarea>
+                <textarea class="form-control w-100" name="Content" id="Content" cols="30" rows="9" placeholder="Введіть своє повідомлення"></textarea>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <input class="form-control" name="name" id="name" type="text" placeholder="Gib deinen Namen ein">
+                <input class="form-control" name="name" id="name" type="text" placeholder="Введіть ім'я">
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <input class="form-control" name="email" id="email" type="email" placeholder="E-Mail Adresse eingeben">
+                <input class="form-control" name="email" id="email" type="email" placeholder="Введіть адресу електронної пошти">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <input class="form-control" name="subject" id="subject" type="text" placeholder="Betreff eingeben">
+                <input class="form-control" name="subject" id="subject" type="text" placeholder="Введіть текст">
               </div>
             </div>
           </div>
           <div class="form-group mt-2 mb-5 mb-lg-0">
-            <button type="submit" class="button button-contactForm primary-btn">Nachricht senden</button>
+            <button type="submit" class="button button-contactForm primary-btn">Відправити</button>
           </div>
         </form>
         <!-- ===============================  Contact  ======================================== -->
@@ -74,7 +74,7 @@
         <div class="media contact-info">
           <span class="contact-info__icon"><i class="icon-material-outline-location-on"></i></span>
           <div class="media-body">
-            <h3>Hauptbüro</h3>
+            <h3>Головний офіс</h3>
             <!-- ===============================  Contact  ======================================== -->
             <p>{{ Setting()->Location }}</p>
             <!-- ===============================  Contact  ======================================== -->

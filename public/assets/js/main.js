@@ -227,4 +227,18 @@ $(document).ready(function () {
     $('#mc_embed_signup').find('form').ajaxChimp();
   });
 
+  $('#social2').socialButtonsShare({
+    socialNetworks: ['facebook', 'twitter', 'instagram'],
+    url: 'https://sokal.life',
+    text: 'Charity Foundation "Future of Ukraine. Sokalshchyna"',
+    sharelabel: false,
+  });
+
+  $('#social3').socialButtonsShare({
+    socialNetworks: ['facebook', 'twitter', 'instagram'],
+    url: 'https://sokal.life',
+    text: 'Благодійний фонд «Майбутнє України. Сокальщина»',
+    sharelabel: false,
+  });
+
 });

@@ -172,6 +172,7 @@
 .languagepicker a:first-child li {
   border: none;
   background: #FFF !important;
+  font-weight: bold;
 }
 
 .languagepicker li img {
@@ -188,5 +189,5 @@
   The first language is 40px heigh, 
   the others are 41px
   */
-  height: 150px;
+  height: 80px;
 }

@@ -87,10 +87,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <p class="top_text">Danke für dein Herz.</p>
-                    <h1>Tragen Sie mit Ihrer Spende zu meiner Wohltätigkeitsarbeit bei. Danke für dein Herz.</h1>
+                    <p class="top_text">Дякуємо вам з усього серця.</p>
+                    <h1>Внесіть свій внесок у нашу благодійну роботу своїми пожертвами. Дякуємо вам з усього серця.</h1>
                     <!--================ Start Popular Event Area =================-->
-                    <a href="{!! url('Contact') !!}" class="primary-btn">Spende</a>
+                    <a href="{!! url('Causes') !!}" class="primary-btn">Зробити пожертву</a>
                 </div>
             </div>
         </div>

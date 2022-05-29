@@ -10,9 +10,9 @@
     <section class="banner-area relative">
         <div class="overlay overlay-bg"></div>
         <div class="container">
-            <div class="row justify-content-lg-end align-items-center banner-content">
-                <div class="col-lg-5">
-                    <h1 class="text-white">Über uns</h1>
+            <div class="row justify-content-lg-start align-items-center banner-content">
+                <div class="col-lg-6">
+                    <h1 class="text-white">Про нас</h1>
                     <!-- ===============================  About  ======================================== -->
                     <p>{!! Setting()->about_gr !!}</p>
                     <!-- ===============================  About  ======================================== -->
@@ -32,59 +32,38 @@
         </style>
         <div class="container">
             <div class="row align-items-end">
-                <div class="col-lg-5">
+                <div class="col-lg-12">
                     <div class="about_details lite_bg">
                         <!-- ===============================  About  ======================================== -->
                         <h2>{!! Setting()->title_about_gr !!}</h2>
                         <!-- ===============================  About  ======================================== -->
-                        <p class="mb-0">
-                            {!! Setting()->content_about_gr !!}
-                        </p>
-                        <!-- ===============================  About  ======================================== -->
-                        <a href="{{ url('about') }}" class="primary-btn mt-5">
-                            Weiterlesen
-                            <i class="ti-angle-right ml-1"></i>
-                        </a>
-                        <!-- ===============================  About  ======================================== -->
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-3 col-md-6 offset-md-1 d-lg-block d-none">
-                    <div class="about_right">
-                        <div class="video-inner justify-content-center align-items-center d-flex">
-                            <!-- ===============================  About  ======================================== -->
-                            <a id="play-home-video" class="video-play-button" href="{!! Setting()->video !!}">
-                                <span></span>
-                            </a>
-                            <!-- ===============================  About  ======================================== -->
+                        <p>Благодійну організацію заснував у 2005 році Юлій Павлович Лукомський із Сокаля. Його баченням було заохотити наступне покоління створити світле майбутнє для себе та України. Благодійна організація надає старшокласникам можливість взяти участь у конкурсі есе на тему «Хто я і ким хочу бути». У різних категоріях передбачено три рівні нагород. Щороку проводяться церемонії для нагородження переможців грошовими винагородами.</p>
+                        <p>Протягом останніх 16 років благодійність значною мірою фінансувалася українською діаспорою в Канаді, США, Великобританії та Австралії. Кошти збиралися усно через церковні колективи та українські громади. Багато з жертводавців були літніми українцями. Благодійна організація має сторінку у Facebook і випускає паперові брошури. Звіти, включаючи переклади дитячих есе, були створені, щоб показати донорам результати, і розповсюджувалися електронною поштою та/або паперовою поштою.</p>
+                        
+                        <div style="text-align:center;margin:25px auto 0;">
+                            <br><iframe width="560" height="315" src="https://www.youtube.com/embed/G0-zRv6Dfng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        
                     </div>
                 </div>
+                
             </div>
-            <div class="about_bg d-lg-block d-none"></div>
         </div>
     </section>
     <!--================ End About Area =================-->
-    <!--================ Start callto Area =================-->
-    <section class="callto-area section-gap relative">
-        <div class="overlay overlay-bg"></div>
+    <!--================ Start CTA Area =================-->
+    <div class="cta-area ">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="top_text">Brauche deine Hilfe?</p>
-                    <div class="call-wrap mx-auto">
-                        <h1>Freiwilliger benötigt in Ihrer Nähe</h1>
-                        <p>In Unserem eigenen Leben, um sie zu beleuchten, erscheinen zwei Tage, die für die Hauptursache das Geflügel selbst trocken sind
-                             aus Hauptursache Geflügel selbst trocken.</p>
-                            <!-- ===============================  About  ======================================== -->
-                        <a href="{{ route('register') }}" class="primary-btn mt-5">
-                            Anmelden
-                            <i class="ti-angle-right ml-1"></i>
-                        </a>
-                    </div>
+                <div class="col-lg-10">
+                    <p class="top_text">Дякуємо вам з усього серця.</p>
+                    <h1>Внесіть свій внесок у нашу благодійну роботу своїми пожертвами. Дякуємо вам з усього серця.</h1>
+                    <!--================ Start Popular Event Area =================-->
+                    <a href="{!! url('Causes') !!}" class="primary-btn">Зробити пожертву</a>
                 </div>
             </div>
         </div>
-    </section>
-    <!--================ End callto Area =================-->
+    </div>
+    <!--================ End CTA Area =================-->
 <!-- ============================================================= Content end   ============================================================= -->
 @endsection

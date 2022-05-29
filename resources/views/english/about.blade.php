@@ -10,8 +10,8 @@
     <section class="banner-area relative">
         <div class="overlay overlay-bg"></div>
         <div class="container">
-            <div class="row justify-content-lg-end align-items-center banner-content">
-                <div class="col-lg-5">
+            <div class="row justify-content-lg-start align-items-center banner-content">
+                <div class="col-lg-6">
                     <h1 class="text-white">About Us</h1>
                     <!-- ===============================  About  ======================================== -->
                     <p>{!! Setting()->about_en !!}</p>
@@ -32,59 +32,38 @@
         </style>
         <div class="container">
             <div class="row align-items-end">
-                <div class="col-lg-5">
+                <div class="col-lg-12">
                     <div class="about_details lite_bg">
                         <!-- ===============================  About  ======================================== -->
                         <h2>{!! Setting()->title_about_en !!}</h2>
                         <!-- ===============================  About  ======================================== -->
-                        <p class="mb-0">
-                            {!! Setting()->content_about_en !!}
-                        </p>
-                        <!-- ===============================  About  ======================================== -->
-                        <a href="{{ url('about') }}" class="primary-btn mt-5">
-                            Read more
-                            <i class="ti-angle-right ml-1"></i>
-                        </a>
-                        <!-- ===============================  About  ======================================== -->
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-3 col-md-6 offset-md-1 d-lg-block d-none">
-                    <div class="about_right">
-                        <div class="video-inner justify-content-center align-items-center d-flex">
-                            <!-- ===============================  About  ======================================== -->
-                            <a id="play-home-video" class="video-play-button" href="{!! Setting()->video !!}">
-                                <span></span>
-                            </a>
-                            <!-- ===============================  About  ======================================== -->
+                        <p>The charity was founded in 2005 by Yuli Pavlovich Lukomskyj of Sokal. His vision was to encourage the next generation to create a bright future for themselves, and for Ukraine. The charity provides high school students with the opportunity to enroll in an essay writing contest on the topic of “Who I am, and what I want to be.” Three levels of awards are provided in various categories. Ceremonies are held each year to provide the winners with cash awards.</p>
+                        <p>Over the last 16 years, the charity has largely been funded by the Ukrainian diaspora in Canada, the US, the UK and Australia. The funds were collected by word of mouth through church groups and Ukrainian communities. Many of the donors were elderly Ukrainians. The charity has a Facebook Page and produces paper brochures. Reports, including translations of the childrens’ essays were created to show donors the results, and distributed by email and/or paper mail.</p>
+                        
+                        <div style="text-align:center;margin:25px auto 0;">
+                            <br><iframe width="560" height="315" src="https://www.youtube.com/embed/G0-zRv6Dfng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        
                     </div>
                 </div>
+                
             </div>
-            <div class="about_bg d-lg-block d-none"></div>
         </div>
     </section>
     <!--================ End About Area =================-->
-    <!--================ Start callto Area =================-->
-    <section class="callto-area section-gap relative">
-        <div class="overlay overlay-bg"></div>
+    <!--================ Start CTA Area =================-->
+    <div class="cta-area ">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="top_text">Need your help?</p>
-                    <div class="call-wrap mx-auto">
-                        <h1>Volunteer Needed At Your Area</h1>
-                        <p>In that Our I own life unto lights them two appear days rule thing fly main for main cause fowl itself dry
-                            from made main cause fowl itself dry.</p>
-                            <!-- ===============================  About  ======================================== -->
-                        <a href="{{ route('register') }}" class="primary-btn mt-5">
-                            Sign up
-                            <i class="ti-angle-right ml-1"></i>
-                        </a>
-                    </div>
+                <div class="col-lg-10">
+                    <p class="top_text">Thanks for your heart.</p>
+                    <h1>Contribute to our charitable work with your donations. Thanks for your heart.</h1>
+                    <!--================ Start Popular Event Area =================-->
+                    <a href="{!! url('Causes') !!}" class="primary-btn">donation</a>
                 </div>
             </div>
         </div>
-    </section>
-    <!--================ End callto Area =================-->
+    </div>
+    <!--================ End CTA Area =================-->
 <!-- ============================================================= Content end   ============================================================= -->
 @endsection

@@ -47,11 +47,11 @@
                                     Days Hours Minutes
                                 </h5>
                                 <!--================ Start Popular Event Area =================-->
-                                <div class="ml-30">{!! $Event->Days !!}</div>
+                                <span class="ml-30">{!! $Event->Days !!}</span>
                                 <!--================ Start Popular Event Area =================-->
-                                <div class="ml-30">{!! $Event->Hours !!}</div>
+                                <span class="ml-30">{!! $Event->Hours !!}</span>
                                 <!--================ Start Popular Event Area =================-->
-                                <div class="ml-30">{!! $Event->Minutes !!}</div>
+                                <span class="ml-30">{!! $Event->Minutes !!}</span>
                                 <!--================ Start Popular Event Area =================-->
                             </div>
 
@@ -88,9 +88,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <p class="top_text">Thanks for your heart.</p>
-                    <h1>Contribute on my charity work by your donation. Thanks for your heart.</h1>
+                    <h1>Contribute to our charitable work with your donations. Thanks for your heart.</h1>
                     <!--================ Start Popular Event Area =================-->
-                    <a href="{!! url('Contact') !!}" class="primary-btn">donation</a>
+                    <a href="{!! url('Causes') !!}" class="primary-btn">donation</a>
                 </div>
             </div>
         </div>

@@ -43,9 +43,9 @@
                 <li><a><i class="icon-material-outline-assignment"></i> Keine Kategorie</a></li>
                 @endif
                 @if(isset($Comments)) 
-                 <li><a><i class="fa fa-comment-o"></i> {{ count($Comments) }} Bemerkungen</a></li>
+                 <li><a><i class="fa fa-comment-o"></i> {{ count($Comments) }} Коментарів</a></li>
                  @else
-                 <li><a><i class="fa fa-comment-o"></i> 0 Bemerkungen</a></li>
+                 <li><a><i class="fa fa-comment-o"></i> 0 Коментарів</a></li>
                  @endif
                 <!-- ===============================  Post  ======================================== -->
               </ul>
@@ -65,9 +65,9 @@
           <div class="comments-area">
             <!-- ===============================  Post  ======================================== -->
             @if(isset($Comments)) 
-             <h4>{{ count($Comments) }} Bemerkungen</h4>
+             <h4>{{ count($Comments) }} Коментарів</h4>
              @else
-             <h4>0 Bemerkungen</h4>
+             <h4>0 Коментарів</h4>
              @endif
              <!-- ===============================  Post  ======================================== -->
               <!-- =========================================== Post Comments ============================ -->
@@ -105,7 +105,7 @@
             <!--   ================  Bed Messagge ================  -->
         @if(session('Messagge'))
         <div class="alert alert-success" role="alert">
-          Herzliche Glückwünsche. Ihr Kommentar wurde erfolgreich gesendet
+          Вітаю. Ваш коментар успішно надіслано
         </div>
         @endif
         <!--   ================  Messagge ================  -->
@@ -121,7 +121,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <button type="submit" class="button button-contactForm primary-btn">Kommentar senden</button>
+                <button type="submit" class="button button-contactForm primary-btn">Надіслати коментар</button>
               </div>
             </form>
           </div>
@@ -130,7 +130,7 @@
           <div class="blog_right_sidebar">
           <!-- ===============================  Post  ======================================== -->
             <aside class="single_sidebar_widget popular_post_widget">
-              <h3 class="widget_title">Letzter Beitrag</h3>
+              <h3 class="widget_title">Останні статті</h3>
               @foreach($RentPosts as $RentPost)
               <div class="media post_item">
                 <img src="{!! asset($RentPost->image) !!}" alt="post">

@@ -93,8 +93,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <p class="top_text">Thanks for your heart.</p>
-                    <h1>Contribute on my charity work by your donation. Thanks for your heart.</h1>
-                     <a href="{!! url('Contact') !!}" class="primary-btn">donation</a>
+                    <h1>Contribute to our charitable work with your donations. Thanks for your heart.</h1>
                 </div>
             </div>
         </div>

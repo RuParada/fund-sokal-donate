@@ -10,8 +10,8 @@
 	<div class="overlay overlay-bg"></div>
 	<div class="container">
 		<div class="row align-items-center banner-content">
-			<div class="col-lg-5">
-				<h1 class="text-white">Unsere Beiträge</h1>
+			<div class="col-lg-6">
+				<h1 class="text-white">Статті</h1>
 				<!-- =============================== Setting BASE ======================================== -->
 				<p>{!! Setting()->content_blog_gr !!}</p>
 			</div>
@@ -55,9 +55,9 @@
 								@endif
 								<!-- =============================== Comments Posts ======================================== -->
 								 @if(isset($Post->Comments)) 
-					             <li><a><i class="fa fa-comment-o"></i> {{ count($Post->Comments) }} Bemerkungen</a></li>
+					             <li><a><i class="fa fa-comment-o"></i> {{ count($Post->Comments) }} коментарів</a></li>
 					             @else
-					             <li><a><i class="fa fa-comment-o"></i> 0 Bemerkungen</a></li>
+					             <li><a><i class="fa fa-comment-o"></i> 0 коментарів</a></li>
 					             @endif
 								<!-- =============================== Comments Posts ======================================== -->
 							</ul>
@@ -73,7 +73,7 @@
           <div class="blog_right_sidebar">
            <!-- ===============================  Posts ======================================== -->
             <aside class="single_sidebar_widget popular_post_widget">
-              <h3 class="widget_title">Letzter Beitrag</h3>
+              <h3 class="widget_title">Останні статті</h3>
               <!-- ===============================  Posts ======================================== -->
               @foreach($RentPosts as $RentPost)
               <div class="media post_item">

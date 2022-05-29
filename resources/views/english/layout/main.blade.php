@@ -32,6 +32,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:url"           content="https://sokal.life" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Future of Ukraine. Sokalshchyna" />
+    <meta property="og:description"   content="A charitable foundation created to support schoolchildren from low-income families in the city of Sokal" />
+    <meta property="og:image"         content="https://sokal.life/storage/settings/October2019/1.png" />
     <!-- ====== Laravel favicon icon================== -->
     <!-- ====== Laravel title site edit delete from admin panel ================== -->
     @if(isset(Setting()->SiteTitle))
@@ -58,8 +64,21 @@
     <!-- =============================== BASE CSS stylesheet ======================================== -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}" media="all" />
     <!-- =============================== BASE CSS stylesheet ======================================== -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/social-buttons-share.css') }}" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font/font.css') }}" media="all" />
+
 </head>
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!--================ Start Header Area =================-->
     <header class="default-header">
@@ -107,7 +126,7 @@
                 <div class="col-lg-5 col-md-6 col-sm-6">
                     <div class="single-footer-widget tp_widgets">
                         <!-- =============================== Setting BASE ======================================== -->
-                        <h4 class="footer_title large_title"><img src="{{ asset(Setting()->LogoPicture) }}" alt="Logo" style="width: 50%;"></h4>
+                        <h4 class="footer_title large_title"><img src="{{ asset(Setting()->LogoPicture) }}" alt="Logo" style="width: 30%;"></h4>
                         <p>
                             <!-- =============================== Setting BASE ======================================== -->
                             {{ Setting()->about_en }}
@@ -123,11 +142,10 @@
               <div class="col-md-3">
                 <div class="single-footer-widget tp_widgets">
                     <h4 class="footer_title">Languages</h4>
-                   <ul class="languagepicker large roundborders">
-                    <a href="{!! url('English') !!}"><li><img src="{{ asset('assets/img/english.png') }}"/>English</li></a>
-                    <a href="{!! url('German') !!}"><li><img src="{{ asset('assets/img/german.png') }}"/>German</li></a>
-                    <a href="{!! url('arabic') !!}"><li><img src="{{ asset('assets/img/arabic.png') }}"/>Arabic</li></a>
-                   </ul>
+                    <ul class="languagepicker large roundborders">
+                        <a href="{!! url('English') !!}"><li><img src="{{ asset('assets/img/english.png') }}"/>English</li></a>
+                        <a href="{!! url('German') !!}"><li><img src="{{ asset('assets/img/ukraine.png') }}"/>Ukraine</li></a>
+                    </ul>
                 </div> 
             </div>
             <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
@@ -170,28 +188,19 @@
 <!--================ End footer Area =================-->
 <!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/vendor/jquery-2.2.4.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/popper.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/jquery.ajaxchimp.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/parallax.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/countdown.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/jquery.sticky.js') }}"></script>
-<!-- =============================== javascript ================ -->
 <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/social-buttons-share.js') }}"></script>
+
 </body>
 
 </html>

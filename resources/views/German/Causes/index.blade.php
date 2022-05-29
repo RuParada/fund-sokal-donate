@@ -11,8 +11,8 @@
         <div class="container">
             <div class="row  align-items-center banner-content">
                 <div class="col-lg-5">
-                    <h1 class="text-white">Unsere Ursachen</h1>
-                    <p>Umsetzung nachhaltiger Programme, die den weltweiten Zugang zu Investitionen und Chancen verbessern.</p>
+                    <h1 class="text-white">Збір коштів</h1>
+                    <p>Тут представлені всі заходи, які створені фондом для підтримки дітей різного віку з малозабезпечених сімей або потребують грошової підтримки</p>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title">
-                        <h2><span>Beliebt</span> Ursachen</h2>
+                        <h2><span>Перелік </span> Заходів</h2>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
             <div class="row">
                 <!--================ Start Popular Causes Area =================-->
                 @foreach($Causes as $Cause)      
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-12">
                     <div class="card single-popular-cause">
                         <div class="card-body">
                             <figure>
@@ -49,13 +49,13 @@
                                  <!--================ Start Popular Causes Area =================-->
                                 <h4 class="card-title">{!! substr($Cause->Title_gr, 0, 190) !!}</h4>
                                 <div class="d-flex justify-content-between raised_goal">
-                                    <p>Angehoben: {!! $Cause->Raised !!}</p>
-                                    <p><span>Tor: {!! $Cause->Goal !!}</span></p>
+                                    <p>Зібрано: {!! $Cause->Raised !!}</p>
+                                    <p><span>Потребуєтся: {!! $Cause->Goal !!}</span></p>
                                 <!--================ Start Popular Causes Area =================-->    
                                 </div>
                                 <div class="d-flex justify-content-between donation align-items-center">
-                                    <a href="{!! url('Causes') !!}/{!! $Cause->slug !!}" class="primary-btn">Spenden</a>
-                                    <p><span class="ti-heart mr-1"></span> {!! $Cause->Donors !!} Spender</p>
+                                    <a href="{!! url('Causes') !!}/{!! $Cause->slug !!}" class="primary-btn">Зробити пожертву</a>
+                                    <p><span class="ti-heart mr-1"></span> {!! $Cause->Donors !!} Пожертвувача</p>
                                 </div>
                             </div>
                         </div>
@@ -70,20 +70,6 @@
         </div>
     </section>
     <!--================ End Popular Causes Area =================-->
-  <!--================ Start CTA Area =================-->
-    <div class="cta-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <!--================ Start Popular Causes Area =================-->
-                    <p class="top_text">Danke für dein Herz.</p>
-                    <h1>Tragen Sie mit Ihrer Spende zu meiner Wohltätigkeitsarbeit bei. Danke für dein Herz.</h1>
-                     <a href="{!! url('Contact') !!}" class="primary-btn">Spende</a>
-                     <!--================ Start Popular Causes Area =================-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--================ End CTA Area =================-->
+  
 <!-- ============================================================= Content end   ============================================================= -->
 @endsection

@@ -9,10 +9,10 @@
     <section class="banner-area relative">
         <div class="overlay overlay-bg"></div>
         <div class="container">
-            <div class="row justify-content-lg-end align-items-center banner-content">
-                <div class="col-lg-5">
-                    <h1 class="text-white">Our Events</h1>
-                    <p>To implement sustainable programs that improve access worldwide to investment, opportunity.</p>
+            <div class="row justify-content-lg-start align-items-center banner-content">
+                <div class="col-lg-6">
+                    <h1 class="text-white">Upcoming Events</h1>
+                    <p>This page displays the latest events created by the foundation</p>
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
             <div class="row">
                 <!--================ Start Popular Causes Area =================-->
                 @foreach($Events as $Event)     
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="single_upcoming_event">
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-md-6">
@@ -91,9 +91,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <p class="top_text">Thanks for your heart.</p>
-                    <h1>Contribute on my charity work by your donation. Thanks for your heart.</h1>
+                    <h1>Contribute to our charitable work with your donations. Thanks for your heart.</h1>
                     <!--================ Start Popular Causes Area =================-->
-                     <a href="{!! url('Contact') !!}" class="primary-btn">Donation</a>
+                     <a href="{!! url('Causes') !!}" class="primary-btn">Donation</a>
                      <!--================ Start Popular Causes Area =================-->
                 </div>
             </div>

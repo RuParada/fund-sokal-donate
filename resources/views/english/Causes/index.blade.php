@@ -10,9 +10,9 @@
         <div class="overlay overlay-bg"></div>
         <div class="container">
             <div class="row  align-items-center banner-content">
-                <div class="col-lg-5">
-                    <h1 class="text-white">Our Causes</h1>
-                    <p>To implement sustainable programs that improve access worldwide to investment, opportunity.</p>
+                <div class="col-lg-6">
+                    <h1 class="text-white">Fundraising</h1>
+                    <p>Here are all the activities that were created by the fund to support children of different ages from low-income families or those in need of financial support</p>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title">
-                        <h2><span>Popular</span> Causes</h2>
+                        <h2><span>Active</span> Fundraising</h2>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
             <div class="row">
                 <!--================ Start Popular Causes Area =================-->
                 @foreach($Causes as $Cause)      
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-12">
                     <div class="card single-popular-cause">
                         <div class="card-body">
                             <figure>
@@ -70,20 +70,18 @@
         </div>
     </section>
     <!--================ End Popular Causes Area =================-->
-  <!--================ Start CTA Area =================-->
+  <!--
     <div class="cta-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <!--================ Start Popular Causes Area =================-->
                     <p class="top_text">Thanks for your heart.</p>
-                    <h1>Contribute on my charity work by your donation. Thanks for your heart.</h1>
-                     <a href="{!! url('Contact') !!}" class="primary-btn">donation</a>
-                     <!--================ Start Popular Causes Area =================-->
+                    <h1>Contribute to our charitable work with your donations. Thanks for your heart.</h1>
+                     <a href="{!! url('Causes') !!}" class="primary-btn">donation</a>
                 </div>
             </div>
         </div>
     </div>
-    <!--================ End CTA Area =================-->
+    -->
 <!-- ============================================================= Content end   ============================================================= -->
 @endsection
